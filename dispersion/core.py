@@ -149,7 +149,7 @@ def IDF(TopicFreq):
 	FreqDist=TopicFreq2FreqDist(TopicFreq)
 	idfT={}
 	for word, dist in FreqDist.iteritems():
-		idfT[word]=float(n)/len(dist)
+		idfT[word]=math.log(float(n)/len(dist),2)
 	return idfT
 
 # 計算 Lyne's D3

@@ -4,13 +4,13 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='naertk',
+    name='dtk',
     version='1.0',
-    description='NAER toolkits for NLP',
+    description='Dispersion toolkits',
     author='Ming-Hong Bai',
     author_email='mhbai.tw@gmail.com',
-    url='https://github.com/mhbai/naertk',
-	test_suite='tests',
-    packages=['dispersion'],
+    url='https://github.com/mhbai/dtk.git',
+	test_suite='dtk.tests',
+    packages=['dtk'],
 )
 
